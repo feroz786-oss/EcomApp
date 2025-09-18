@@ -1,0 +1,67 @@
+package com.mtd.EcomApp.entity;
+import java.util.List;
+public class PlaceOrder {
+	private String streat;
+	private String place;
+	private String city;
+	private String zip;
+	private String pay_mode;
+	private List<PlaceOrderItem> items;
+	public String getStreat() {
+		return streat;
+	}
+	public void setStreat(String streat) {
+		this.streat = streat;
+	}
+	public String getPlace() {
+		return place;
+	}
+	public void setPlace(String place) {
+		this.place = place;
+	}
+	public String getCity() {
+		return city;
+	}
+	public void setCity(String city) {
+		this.city = city;
+	}
+	public String getZip() {
+		return zip;
+	}
+	public void setZip(String zip) {
+		this.zip = zip;
+	}
+	public String getPay_mode() {
+		return pay_mode;
+	}
+	public void setPay_mode(String pay_mode) {
+		this.pay_mode = pay_mode;
+	}
+	public List<PlaceOrderItem> getItems() {
+		return items;
+	}
+	public void setItems(List<PlaceOrderItem> items) {
+		this.items = items;
+	}
+	public PlaceOrder(String streat, String place, String city, String zip, String pay_mode,
+			List<PlaceOrderItem> items) {
+		super();
+		this.streat = streat;
+		this.place = place;
+		this.city = city;
+		this.zip = zip;
+		this.pay_mode = pay_mode;
+		this.items = items;
+	}
+	public PlaceOrder() {
+		super();
+	}
+	@Override
+	public String toString() {
+		return "PlaceOrder [streat=" + streat + ", place=" + place + ", city=" + city + ", zip=" + zip + ", pay_mode="
+				+ pay_mode + ", items=" + items + "]";
+	}
+	
+	
+
+}
